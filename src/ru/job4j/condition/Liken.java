@@ -9,10 +9,10 @@ public class Liken {
         boolean result = first > second;
         System.out.println(result);
 
-        result = 10 < 9;
+        result = first < second;
         System.out.println(result);
 
-        result = 10 == 9;
+        result = first == second;
         System.out.println(result);
     }
 }
