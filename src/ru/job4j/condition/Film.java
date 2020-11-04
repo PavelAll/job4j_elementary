@@ -12,7 +12,7 @@ public class Film {
 
         String msg = Film.permission(21);
         System.out.println(msg);
-
+        boolean a =  false;
         msg = Film.permission(15);
         System.out.println(msg);
     }
