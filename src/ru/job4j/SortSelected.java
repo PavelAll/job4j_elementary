@@ -10,10 +10,8 @@ public class SortSelected {
 
         for (int i = 0; i < data.length; i++) { // 3, 5, 1, 2, 4
             int min = MinDiapason.findMin(data, i, data.length - 1);
-            int index = FindLoop.indexOf(data, min, 0, data.length - 1);
-            if (data[index] < data[i]) {
-                SwitchArray.swap(data, index, i);
-            }
+            int index = FindLoop.indexOf(data, min, i, data.length - 1);
+            SwitchArray.swap(data, index, i);
         }
         return data;
     }
