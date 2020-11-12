@@ -11,10 +11,13 @@ public class Machine {
         int size = 0;
         int sum = money - price;
 
-        for (int i = 0; i < coins.length; i++) {
-            while (sum >= coins[i]) {
-                rsl[size++] = coins[i];
-                sum -= coins[i];
+        while (sum > 0) {
+            for (int i = 0; i < coins.length; i++) {
+                if (sum >= coins[i]) {
+                    rsl[size++] = coins[i];
+                    sum -= coins[i];
+                    break;
+                }
             }
         }
         return Arrays.copyOf(rsl, size);
