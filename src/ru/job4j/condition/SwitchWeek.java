@@ -1,8 +1,6 @@
 package ru.job4j.condition;
 
 public class SwitchWeek {
-
-    @SuppressWarnings("checkstyle:WhitespaceAround")
     public String nameOfDay(int day) {
         String name;
         switch (day) {

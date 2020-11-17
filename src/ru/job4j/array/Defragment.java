@@ -1,6 +1,4 @@
 package ru.job4j.array;
-
-
 import static ru.job4j.array.SwitchArray.swap;
 
 public class Defragment {

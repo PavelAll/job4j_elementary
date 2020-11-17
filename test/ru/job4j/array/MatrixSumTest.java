@@ -38,5 +38,4 @@ public class MatrixSumTest {
         int rsl = MatrixSum.sum(in);
         assertThat(rsl, is(expect));
     }
-
 }
